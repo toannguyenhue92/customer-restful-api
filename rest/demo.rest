@@ -1,0 +1,28 @@
+GET http://localhost:8080/api/customers HTTP/1.1
+Content-Type: application/json
+
+#
+
+POST  http://localhost:8080/api/customers HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName" : "Lâm",
+    "lastName" : "Tâm"
+}
+
+#
+
+PUT http://localhost:8080/api/customers/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 11,
+    "firstName": "Lâm",
+    "lastName": "Tâm"
+}
+
+#
+
+DELETE  http://localhost:8080/api/customers/13 HTTP/1.1
+Content-Type: application/json
